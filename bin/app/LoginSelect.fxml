@@ -22,19 +22,22 @@
          </children></HBox>
    </left>
    <center>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #263340;" BorderPane.alignment="CENTER">
          <children>
-            <Text layoutX="44.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E Health Care System">
+            <Text fill="WHITE" layoutX="44.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E Health Care System">
                <font>
                   <Font name="Calibri" size="40.0" />
                </font>
             </Text>
-            <Text layoutX="44.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login As" wrappingWidth="115.96247100830078">
+            <Text fill="WHITE" layoutX="44.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login As" wrappingWidth="115.96247100830078">
                <font>
                   <Font name="Calibri Light" size="26.0" />
                </font>
             </Text>
-            <Text fill="GREY" layoutX="51.0" layoutY="680.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dont have an account? Sign Up." />
+            <Text fill="GREY" layoutX="45.0" layoutY="679.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dont have an account?">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font></Text>
             <ButtonBar layoutX="43.0" layoutY="304.0" prefHeight="40.0" prefWidth="200.0">
               <buttons>
                   <ImageView fx:id="doctorImage" fitHeight="88.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
@@ -42,7 +45,10 @@
                         <Image url="file:/H:/Images/doctor.png" />
                      </image>
                   </ImageView>
-                  <Button fx:id="doctorLoginButton" mnemonicParsing="false" onAction="#goToDoctorLoginScreen" prefHeight="30.0" prefWidth="230.0" style="-fx-background-radius: 10;" text="Doctor" textFill="#261717" />
+                  <Button fx:id="doctorLoginButton" mnemonicParsing="false" onAction="#goToDoctorLoginScreen" prefHeight="30.0" prefWidth="230.0" style="-fx-background-radius: 10; -fx-background-color: rgb(87,98,182);" text="Doctor" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
               </buttons>
             </ButtonBar>
             <ButtonBar layoutX="43.0" layoutY="413.0" prefHeight="40.0" prefWidth="200.0">
@@ -52,7 +58,10 @@
                         <Image url="file:/H:/Images/patient.png" />
                      </image>
                   </ImageView>
-                  <Button fx:id="patientLoginButton" mnemonicParsing="false" onAction="#goToPatientLoginScreen" prefHeight="30.0" prefWidth="230.0" style="-fx-background-radius: 10;" text="Patient" textFill="#261717" />
+                  <Button fx:id="patientLoginButton" mnemonicParsing="false" onAction="#goToPatientLoginScreen" prefHeight="30.0" prefWidth="230.0" style="-fx-background-radius: 10; -fx-background-color: rgb(87,98,182);" text="Patient" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
                </buttons>
             </ButtonBar>
             <ButtonBar layoutX="43.0" layoutY="525.0" prefHeight="40.0" prefWidth="200.0">
@@ -62,9 +71,13 @@
                         <Image url="file:/H:/Images/admin.png" />
                      </image>
                   </ImageView>
-                  <Button fx:id="adminLoginButton" mnemonicParsing="false" onAction="#goToAdminLoginScreen" prefHeight="30.0" prefWidth="230.0" style="-fx-background-radius: 10;" text="Admin" textFill="#261717" />
+                  <Button fx:id="adminLoginButton" mnemonicParsing="false" onAction="#goToAdminLoginScreen" prefHeight="30.0" prefWidth="230.0" style="-fx-background-radius: 10; -fx-background-color: rgb(87,98,182);" text="Admin" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Button>
                </buttons>
             </ButtonBar>
+            <Button fx:id="changeToSignupButton" layoutX="194.0" layoutY="662.0" mnemonicParsing="false" onAction="#changeToSignupSelectScreen" prefHeight="26.0" prefWidth="59.0" text="Signup" />
          </children>
       </AnchorPane>
    </center>

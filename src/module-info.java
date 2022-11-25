@@ -7,5 +7,5 @@ module SDAFInalProject {
 	requires java.desktop;
 	
 	
-	opens app to javafx.graphics, javafx.fxml;
+	opens app to javafx.graphics, javafx.fxml, javafx.base;
 }

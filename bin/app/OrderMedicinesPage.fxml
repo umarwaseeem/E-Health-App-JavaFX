@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1550.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.OrderMedicinesPageController">
+   <left>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: rgb(87,98,182);" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/H:/SDAFInalProject/Images/Med.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #263340;" BorderPane.alignment="CENTER">
+         <children>
+            <Button layoutX="133.0" layoutY="465.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="299.0" style="-fx-background-color: rgb(87,98,182);" text="Get Prescription">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Button>
+            <Button fx:id="OrderMedicinesProceedBtn" layoutX="179.0" layoutY="631.0" mnemonicParsing="false" onAction="#OrderMedicinesProceedcCick" prefHeight="43.0" prefWidth="207.0" style="-fx-background-color: rgb(173,255,47);" text="Proceed" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

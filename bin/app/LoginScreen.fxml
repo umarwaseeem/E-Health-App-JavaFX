@@ -20,17 +20,17 @@
       </HBox>
    </left>
    <center>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #263340;" BorderPane.alignment="CENTER">
          <children>
-            <Text fx:id="loginScreenMainText" layoutX="44.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login As A ">
+            <Text fx:id="loginScreenMainText" fill="WHITE" layoutX="44.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login As A ">
                <font>
                   <Font name="Calibri" size="40.0" />
                </font>
             </Text>
             <TextField fx:id="userNameTextField" layoutX="44.0" layoutY="318.0" prefHeight="46.0" prefWidth="313.0" />
             <Label layoutX="44.0" layoutY="295.0" text="UserName" textFill="GREY" />
-            <Label layoutX="44.0" layoutY="381.0" text="Password" textFill="GREY" />
-            <Button fx:id="loginButton" layoutX="106.0" layoutY="519.0" mnemonicParsing="false" onAction="#submitButton" prefHeight="44.0" prefWidth="188.0" style="-fx-background-color: rgb(87,98,182); -fx-background-radius: 20;" text="Login" textFill="WHITE">
+            <Label layoutX="44.0" layoutY="392.0" text="Password" textFill="GREY" />
+            <Button fx:id="loginButton" layoutX="106.0" layoutY="519.0" mnemonicParsing="false" onAction="#submitButton" prefHeight="44.0" prefWidth="188.0" style="-fx-background-color: rgb(87,98,182); -fx-background-radius: 10;" text="Login" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1550.0" style="-fx-background-color: #263340;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.DoctorRecommendationsPageController">
+   <left>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: rgb(87,98,182);" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/H:/SDAFInalProject/Images/stethoscope.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ComboBox fx:id="Select_timings_ComboBox" layoutX="162.0" layoutY="308.0" onAction="#initialize" prefHeight="25.0" prefWidth="258.0" promptText="Select Timings" />
+            <Button layoutX="223.0" layoutY="407.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="137.0" style="-fx-background-color: rgb(173,255,47);" text="Book">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
