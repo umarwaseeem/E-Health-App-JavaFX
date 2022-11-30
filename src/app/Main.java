@@ -1,7 +1,6 @@
 package app;
 	
 import java.io.FileInputStream;
-import java.io.IOException;
 
 
 import javafx.application.Application;
@@ -15,41 +14,35 @@ import javafx.stage.Stage;
 
 
 public class Main extends Application {
+//	this is responsible for loading UI
 	FXMLLoader loader = new FXMLLoader();
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			String fxmlDocPath = "/SDAFInalProject/src/app/LoginSelect.fxml";
+//			set UI to load
+			String fxmlDocPath = "/SDAFInalProject/src/Views/LoginSelect.fxml";
 			FileInputStream fxmlStream = new FileInputStream(fxmlDocPath);
+//			set root element
 			BorderPane root = (BorderPane)loader.load(fxmlStream);
 			
-			Scene scene = new Scene(root,1000,800);
+//			set scene
+			Scene scene = new Scene(root,1550,800);
 			
-//			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+//			load css
+			scene.getStylesheets().add(getClass().getResource("styles.css").toExternalForm());
 			
+//			show the UI
 			primaryStage.setScene(scene);
 			primaryStage.show();
-		
+			
 		} catch(Exception e) {
 			e.printStackTrace();
 		}
 	}
 	
-	public void changeScene(Stage currentStage, String destinationUI) throws IOException {
-		
-		String fxmlDocPath = destinationUI;
-		FileInputStream fxmlStream = new FileInputStream(fxmlDocPath);
-		BorderPane pane = (BorderPane)loader.load(fxmlStream);
-		
-		Scene scene = new Scene(pane,600,600);
-		
-		currentStage.setScene(scene);
-		currentStage.show();
-	}
-	
 	
 	public static void main(String[] args) {
-//		DatabaseHandler dbHandler = new DatabaseHandler();
+//		start the application
 		launch(args);
 	}
 }

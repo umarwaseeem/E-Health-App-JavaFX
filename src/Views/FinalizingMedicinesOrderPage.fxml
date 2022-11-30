@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1550.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewControllers.FinalizingMedicinesOrderPageController">
+   <left>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: rgb(87,98,182);" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/H:/SDAFInalProject/Images/payment.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #263340;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="35.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" wrappingWidth="141.17578125">
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="26.0" layoutY="221.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Card No:">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <TextField layoutX="22.0" layoutY="241.0" />
+            <Text fill="#fffbfb" layoutX="26.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Cvv">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Text>
+            <TextField layoutX="23.0" layoutY="332.0" />
+            <Button layoutX="238.0" layoutY="469.0" mnemonicParsing="false" onAction="#showAlertBox" text="Confirm" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

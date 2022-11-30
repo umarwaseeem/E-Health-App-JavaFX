@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="1000.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewControllers.SignupScreenSelectController">
+   <left>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="370.0" style="-fx-background-color: rgb(87,98,182);" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/H:/Images/stethoscope.png" />
+               </image>
+            </ImageView>
+         </children></HBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #263340;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="44.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Signup - Create A New Account">
+               <font>
+                  <Font name="Calibri" size="40.0" />
+               </font>
+            </Text>
+            <ButtonBar layoutX="43.0" layoutY="304.0" prefHeight="40.0" prefWidth="200.0">
+              <buttons>
+                  <ImageView fx:id="doctorSignupImage" fitHeight="88.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/H:/Images/doctor.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="doctorSignupButton" mnemonicParsing="false" onAction="#goToDoctorSignupScreen" prefHeight="30.0" prefWidth="230.0" style="-fx-background-radius: 10;" text="Doctor" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+              </buttons>
+            </ButtonBar>
+            <ButtonBar layoutX="43.0" layoutY="413.0" prefHeight="40.0" prefWidth="200.0">
+               <buttons>
+                  <ImageView fx:id="patientSignupImage" fitHeight="88.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/H:/Images/patient.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="patientSignupButton" mnemonicParsing="false" onAction="#goToPatientSignupScreen" prefHeight="30.0" prefWidth="230.0" style="-fx-background-radius: 10;" text="Patient" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </buttons>
+            </ButtonBar>
+            <ButtonBar layoutX="43.0" layoutY="525.0" prefHeight="40.0" prefWidth="200.0">
+               <buttons>
+                  <ImageView fx:id="adminSignupImage" fitHeight="88.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/H:/Images/admin.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="adminSignupButton" mnemonicParsing="false" onAction="#goToAdminSignupScreen" prefHeight="30.0" prefWidth="230.0" style="-fx-background-radius: 10;" text="Admin" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Button>
+               </buttons>
+            </ButtonBar>
+            <Text fill="GREY" layoutX="45.0" layoutY="679.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Already Have An Account?">
+               <font>
+                  <Font name="Calibri" size="15.0" />
+               </font>
+            </Text>
+            <Button fx:id="changeToLoginButton" layoutX="211.0" layoutY="662.0" mnemonicParsing="false" onAction="#changeToLoginSelectScreen" prefHeight="26.0" prefWidth="55.0" text="Login" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

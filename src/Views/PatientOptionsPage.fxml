@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="800.0" prefWidth="1550.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ViewControllers.PatientOptionsPageController">
+   <left>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="370.0" style="-fx-background-color: rgb(87,98,182);" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="800.0" prefWidth="370.0">
+               <children>
+                  <ImageView fitHeight="90.0" fitWidth="90.0" layoutX="7.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/H:/SDAFInalProject/Images/patient2.png" />
+                     </image>
+                  </ImageView>
+                  <Text fill="WHITE" layoutX="103.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome Patient!" wrappingWidth="261.5367431640625">
+                     <font>
+                        <Font name="Calibri Bold" size="40.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="patientSignoutButton" layoutY="719.0" mnemonicParsing="false" onAction="#signout" prefHeight="70.0" prefWidth="220.0" style="-fx-background-color: #d14957;" text="Signout" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="32.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/H:/SDAFInalProject/Images/signout.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button layoutX="-3.0" layoutY="660.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="148.0" style="-fx-background-color: green;" text="Settings" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="27.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/H:/SDAFInalProject/Images/settings.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #263340;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="BookAppointmentBtn" layoutX="43.0" layoutY="182.0" mnemonicParsing="false" onAction="#BookAppointmentClick" prefHeight="194.0" prefWidth="366.0" style="-fx-background-radius: 20;" text="Book An Appointment" textFill="WHITE">
+               <font>
+                  <Font size="23.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/H:/SDAFInalProject/Images/appointment.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </Button>
+            <Button fx:id="OrderMedicinesBtn" layoutX="43.0" layoutY="475.0" mnemonicParsing="false" onAction="#OrderMedicinesClick" prefHeight="194.0" prefWidth="366.0" style="-fx-background-radius: 20;" text="Order Medicines" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="55.0" fitWidth="86.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/H:/SDAFInalProject/Images/medicine.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <ImageView fitHeight="35.0" fitWidth="32.0" layoutX="1304.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/H:/SDAFInalProject/Images/bell.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="43.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="What would you like to do?">
+               <font>
+                  <Font size="40.0" />
+               </font>
+            </Text>
+            <Button fx:id="upcomingAppointmentsButton" layoutX="531.0" layoutY="182.0" mnemonicParsing="false" prefHeight="194.0" prefWidth="366.0" style="-fx-background-radius: 20;" text="See Your Upcoming Appointments" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="20.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="46.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/H:/SDAFInalProject/Images/appointmentComing.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="checkPrescriptionButton" layoutX="531.0" layoutY="475.0" mnemonicParsing="false" prefHeight="194.0" prefWidth="366.0" style="-fx-background-radius: 20;" text="See past appointments" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="24.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="46.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/H:/SDAFInalProject/Images/appointment.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
