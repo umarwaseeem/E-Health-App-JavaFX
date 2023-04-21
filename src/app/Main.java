@@ -20,7 +20,7 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 //			set UI to load
-			String fxmlDocPath = "/SDAFInalProject/src/Views/LoginSelect.fxml";
+			String fxmlDocPath = "/FInalProject/src/Views/LoginSelect.fxml";
 			FileInputStream fxmlStream = new FileInputStream(fxmlDocPath);
 //			set root element
 			BorderPane root = (BorderPane)loader.load(fxmlStream);
